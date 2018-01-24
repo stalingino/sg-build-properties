@@ -1,0 +1,30 @@
+environment:
+    public:
+        site-code: sample-uat
+        sample:
+            api: http://sample.com:8080/sample-server
+            legacyweb: http://sample.com/sample-lagacy
+        management:
+            base: http://sample.com:8081/management
+            user: /user-management
+            all-forms: /all-forms
+        forms:
+            jsp: http://sample.com:8080/forms.jsp
+    protected:
+        sample:
+            database:
+                username: dbuser
+                password: "******"
+        another:
+            database:
+                username: anotherdb
+                password: "******"
+            more-database:
+                username: moredb
+                password: "******"
+    private:
+        appserver:
+            access:
+                host: sample.com
+                username: sshuser
+                password: "******"

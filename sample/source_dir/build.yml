@@ -1,0 +1,3 @@
+property-files:
+    - js/irf-env.js
+    - js/irf-config.{{site-code}}.js

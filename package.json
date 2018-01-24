@@ -1,0 +1,22 @@
+{
+  "name": "dvara-build-properties",
+  "version": "1.2.5",
+  "description": "This tool builds property files from selected environment variable list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "dvara-build-properties": "index.js"
+  },
+  "author": "Stalin Gino S <stalin.solomon@dvara.com>",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "colors": "^1.1.2",
+    "yamljs": "^0.3.0",
+    "lodash": "^4.17.4",
+    "commander": "^2.13.0"
+  }
+}
