@@ -1,6 +1,6 @@
 {
   "name": "dvara-build-properties",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "This tool builds property files from selected environment variable list",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,10 @@
   },
   "bin": {
     "dvara-build-properties": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stalingino/dvara-build-properties.git"
   },
   "author": "Stalin Gino S <stalin.solomon@dvara.com>",
   "license": "ISC",
