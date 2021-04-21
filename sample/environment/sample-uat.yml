@@ -11,11 +11,11 @@ environment:
             server-ext: /server-ext
             all-forms: /forms
         forms:
-            jsp: http://sample.com:8080/forms/formPrint.jsp
+            jsp: http://sample.com:8080/forms.jsp
         bi:
             base: http://sample.com:8081/bi-dev
         psychometric:
-            api: http://sample.com:8080/psychometric-8.2
+            api: http://sample.com:8080/psychometric
         analytics:
             web: http://31.200.113.237:12345
             api: http://31.200.113.237:1337
