@@ -1,5 +1,5 @@
 var irf = irf || {};
-irf.BASE_URL = '{{perdix.api}}';
+irf.BASE_URL = '{{sample.api}}';
 irf.MANAGEMENT_BASE_URL = '{{management.base}}';
 irf.FORM_DOWNLOAD_URL = '{{forms.jsp}}';
 irf.BI_BASE_URL = "{{bi.base}}";
