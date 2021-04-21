@@ -1,5 +1,5 @@
 {
-  "name": "dvara-build-properties",
+  "name": "sg-build-properties",
   "version": "2.1.2",
   "description": "This tool update property files from source directory with actual environment values using selected environment property file",
   "main": "index.js",
@@ -7,11 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "dvara-build-properties": "index.js"
+    "sg-build-properties": "index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stalingino/dvara-build-properties.git"
+    "url": "git+https://github.com/stalingino/sg-build-properties.git"
   },
   "author": "Stalin Gino S <stalingino@gmail.com>",
   "license": "ISC",
