@@ -1,30 +1,47 @@
 environment:
     public:
-        site-code: sample-uat
-        sample:
-            api: http://sample.com:8080/sample-server
-            legacyweb: http://sample.com/sample-lagacy
+        site-code: sample
+        host-name: sample.com
+        perdix:
+            api: => "http://" + env("public.host-name") + ":8080/sample-server"
+            legacyweb: http://sample.com/samplelegacy
         management:
             base: http://sample.com:8081/management
             user: /user-management
-            all-forms: /all-forms
+            server-ext: /server-ext
+            all-forms: /forms
         forms:
             jsp: http://sample.com:8080/forms.jsp
+        bi:
+            base: http://sample.com:8081/bi-dev
+        psychometric:
+            api: http://sample.com:8080/psychometric
+        analytics:
+            web: http://31.200.113.237:12345
+            api: http://31.200.113.237:1337
+        audit:
+            api: http://sample.com:88
     protected:
         sample:
-            database:
-                username: dbuser
-                password: "******"
-        another:
-            database:
-                username: anotherdb
-                password: "******"
-            more-database:
-                username: moredb
-                password: "******"
+            datasource:
+                host: => env("public.host-name")
+                database: financialForms
+                username: financialForms
+                password: => encrypt("financialForms")
+        audit:
+            datasource:
+                host: localhost
+                database: sample_audit
+                username: auditdbuser
+                password: => encrypt("password")
+            dump-datasource:
+                host: localhost
+                database: sample_audit_dump
+                username: auditdumpuser
+                password: => encrypt("p2password")
     private:
         appserver:
             access:
-                host: sample.com
+                host: sample.com.local
                 username: sshuser
                 password: "******"
