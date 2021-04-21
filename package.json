@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/stalingino/dvara-build-properties.git"
   },
-  "author": "Stalin Gino S <stalin.solomon@dvara.com>",
+  "author": "Stalin Gino S <stalingino@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "colors": "^1.1.2",
