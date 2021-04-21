@@ -6,7 +6,7 @@ environment:
             api: => "http://" + env("public.host-name") + ":8080/sample-server"
             legacyweb: http://sample.com/samplelegacy
         management:
-            base: http://devkinara.perdix.in:8081/management
+            base: http://sample.com:8081/management
             user: /user-management
             server-ext: /server-ext
             all-forms: /forms
